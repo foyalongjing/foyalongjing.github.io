@@ -24,7 +24,7 @@ body[data-theme=dark] {
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: #fff;
+  background-color: #dadada;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1817,3 +1817,16 @@ body.loaded {
   gap: 1rem;
 }
 /*----------------------------------以上分类页面分列----------------------------*/
+
+/* 针对特定文章的首行缩进 */
+.indent-article .post-content p {
+  text-indent: 2em;
+  margin-bottom: 1em;
+}
+
+/* 排除特殊情况 */
+.indent-article .post-content p:first-child,
+.indent-article .post-content code,
+.indent-article .post-content pre {
+  text-indent: 0;
+}
